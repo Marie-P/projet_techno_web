@@ -3,7 +3,6 @@ header('Location: ' . $_SERVER['HTTP_REFERER']);
 // fixe le délai d'expiration du programme
 set_time_limit (500);
 $path= "docs";
-
 // appel de la fonction récursive qui va nous permettre d'analyser le répertoire docs
 saveDir($path);
 
@@ -47,8 +46,8 @@ function saveDir($path){
 				// connection à la bdd
 				try {
 			    $port="3306";
-			    $db="lecturerecursive";
-			    $user='user';
+			    $db="imagesdata";
+			    $user='root';
 			    $pass='my-secret-pw';
 			    $connect = "mysql:host=localhost:$port;dbname=$db";
 			    $database = new PDO($connect, $user, $pass);
@@ -65,7 +64,7 @@ function saveDir($path){
             $sql = $database->query('SELECT COUNT(*) AS nbImages FROM `imagesdata`')->fetch();
             $id = (int) $sql['nbImages'];
             // Ajout de cette nouvelle image dans la base de donnée
-            $database->query("INSERT INTO `imagesData`(`id`, `name`, `type`, `size`, `path`) VALUES ('$id', '$nameFile', '$extension', '$size', '$pathToSave')");
+            $database->query("INSERT INTO `imagesdata`(`id`, `name`, `type`, `size`, `path`) VALUES ('$id', '$nameFile', '$extension', '$size', '$pathToSave')");
             // On enregistre l'image dans le repertoire
             $uploads_dir = getcwd() . "/utils/images/";
             $uploads_dir .= $entree;

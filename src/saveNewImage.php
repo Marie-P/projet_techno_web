@@ -12,7 +12,7 @@
     $sql = $database->query('SELECT COUNT(*) AS nbImages FROM `imagesdata`')->fetch();
     $id = (int) $sql['nbImages'];
     // Ajout de cette nouvelle image dans la base de donnée
-    $database->query("INSERT INTO `imagesData`(`id`, `name`, `type`, `size`, `path`) VALUES ('$id', '$name', '$extension', '$size', '$pathToSave')");
+    $database->query("INSERT INTO `imagesdata`(`id`, `name`, `type`, `size`, `path`) VALUES ('$id', '$name', '$extension', '$size', '$pathToSave')");
     // On enregistre l'image dans le repertoire
     rename($_FILES["monfichier"]["tmp_name"], "$pathToSave");
   }

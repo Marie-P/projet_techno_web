@@ -9,7 +9,7 @@
   if(is_numeric($_POST['idToDelete'])){
     $images = $database->query('SELECT * FROM `imagesdata`')->fetchAll(PDO::FETCH_ASSOC);
     $id = $_POST['idToDelete'];
-    $database->query("DELETE FROM `imagesData` where `id`= '$id'");
+    $database->query("DELETE FROM `imagesdata` where `id`= '$id'");
     for ($i=$id; $i < sizeof($images); $i++) {
         $database->query("UPDATE `imagesdata` SET `id`='$i' WHERE `id` = $i + 1");
       }
@@ -79,8 +79,8 @@
   function deleteAll($nbImages) {
     try {
       $port="3306";
-      $db="lecturerecursive";
-      $user='user';
+      $db="imagesdata";
+      $user='root';
       $pass='my-secret-pw';
       $connect = "mysql:host=localhost:$port;dbname=$db";
       $database = new PDO($connect, $user, $pass);
@@ -89,7 +89,7 @@
     }
     $images = $database->query('SELECT * FROM `imagesdata`')->fetchAll(PDO::FETCH_ASSOC);
     foreach ($images as $image) {
-      $database->query("DELETE FROM `imagesData` where `id`= $image[id]");
+      $database->query("DELETE FROM `imagesdata` where `id`= $image[id]");
     }
     $query = $database->prepare('SELECT * FROM `imagesdata` ORDER BY id DESC');
     return $query->fetchAll(PDO::FETCH_ASSOC);
