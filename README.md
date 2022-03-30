@@ -7,6 +7,11 @@ Le mot de passe pour se connecter à la partie admin : my-secret-pw
 ## Exemple d'utilisation
 ![Alt Text](https://github.com/Marie-P/projet_techno_web/blob/master/utils/pourReadMe/demo.gif)
 
+## TPs du cours : 
+* https://github.com/Marie-P/tp1_techno_web
+* https://github.com/Marie-P/tp2_techno_web
+* https://github.com/Marie-P/tp3_techno_web
+
 ## Langages
 J'ai implémenter le code en utilisant PHP, HTML et CSC.
 
