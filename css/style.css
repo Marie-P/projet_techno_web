@@ -1,0 +1,108 @@
+/* Fond du corp de la page */
+body{
+  background-color: rgb(230, 200, 157);
+  margin: 0%;
+}
+
+/* Pour mettre la numérotation en bas de la pase */
+.pages{
+  position: fixed;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%); 
+  margin: 0 auto;
+}
+
+/* Les numéros sont bleus */
+a{
+  text-decoration: none; 
+  color: rgb(70, 46, 116);
+}
+
+/* Lorsqu'on passe le curseur sur le numéro, il se souligne (modèle de google) */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Le numéro de la page est blanc lorsqu'on s'y situe */
+.page-link.active {
+  color: white;
+  text-decoration: none; 
+}
+
+.zoom {
+  width: 320px;
+  height: 240px;
+}
+
+.image img {
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+.image:hover img {
+    cursor: pointer;
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.25); /* Safari et Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* Internet Explorer 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.collapsible {
+  background-color: rgb(197, 178, 157);
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: rgb(109, 98, 85)
+}
+
+.collapsible:after {
+  content: "\002B"; 
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(252, 235, 213);
+}
+
+.todelete{
+  background-color: red;
+}
+.todelete:hover{
+  background-color:rgb(245, 135, 135);
+}
+button{
+  cursor: pointer;
+}
+input{
+  cursor: pointer;
+}
