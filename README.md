@@ -4,6 +4,9 @@ La consigne pour ce projet est de reprendre les 3 tps réalisés pour ce cours e
 
 Le mot de passe pour se connecter à la partie admin : my-secret-pw
 
+## Exemple d'utilisation
+![Alt Text](https://github.com/Marie-P/projet_techno_web/blob/master/utils/pourReadMe/demo.gif)
+
 ## Langages
 J'ai implémenter le code en utilisant PHP, HTML et CSC.
 
@@ -28,5 +31,3 @@ J'ai utilisé comme système de gestion de base de données mysql.
    * Créer une nouvelle base de données "imagesdata" <img src="utils/pourReadMe/creation.png" />
    * Importer la base de données imagesdata.sql dans phpmyadmin. <img src="utils/pourReadMe/importer.png" />
    * exécuter le programme : php -S localhost:8000
-
-## Exemple d'utilisation
