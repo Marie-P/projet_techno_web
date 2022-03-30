@@ -3,7 +3,7 @@
 set_time_limit (500);
 $path= "docs";
 
-echo '<div style="width: 400px;height:400px;border: solid; overflow-y: scroll;float:left;border-color:rgb(61, 56, 48);">';
+echo '<div style="width: 350px;height:350px;border: solid; overflow-y: scroll;float:left;border-color:rgb(61, 56, 48);">';
 
 // appel de la fonction récursive qui va nous permettre d'analyser le répertoire docs
 explorerDir($path);

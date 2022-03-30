@@ -1,6 +1,8 @@
 # Sujet : Projet final
 ## Consigne
-La consigne pour ce projet est de reprendre les 3 tps réalisés pour ce cours et d'y ajouter une partie admin pour gérer les images enregistrées.
+La consigne pour ce projet est de reprendre les 3 tps réalisés pour ce cours et d'y ajouter une partie admin pour gérer les images enregistrées. 
+
+Le mot de passe pour se connecter à la partie admin : my-secret-pw
 
 ## Langages
 J'ai implémenter le code en utilisant PHP, HTML et CSC.
