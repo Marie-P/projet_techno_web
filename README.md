@@ -1,6 +1,6 @@
 # Sujet : Projet final
 ## Consigne
-La consigne pour ce projet est de reprendre les 3 tps réalisés pour ce cours.
+La consigne pour ce projet est de reprendre les 3 tps réalisés pour ce cours et d'y ajouter une partie admin pour gérer les images enregistrées.
 
 ## Langages
 J'ai implémenter le code en utilisant PHP, HTML et CSC.
@@ -23,12 +23,8 @@ J'ai utilisé comme système de gestion de base de données mysql.
    * Serveur : 111.11.0.1:3306
    * Utilisateur : root
    * Mot de passe : my-secret-pw
-   * Créer une nouvelle base de données "imagesdata"
-<img src="utils/pourReadMe/creation.png" />
-
-
-   * Importer la base de données imagesdata.sql dans phpmyadmin.
-<img src="utils/pourReadMe/importer.png" />
+   * Créer une nouvelle base de données "imagesdata" <img src="utils/pourReadMe/creation.png" />
+   * Importer la base de données imagesdata.sql dans phpmyadmin. <img src="utils/pourReadMe/importer.png" />
    * exécuter le programme : php -S localhost:8000
 
 ## Exemple d'utilisation
