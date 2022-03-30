@@ -35,7 +35,7 @@
     </form>
     </div>
     <div style="text-align:center;background-color:rgb(253, 199, 122);border:solid;border-color:rgb(253, 199, 122);">
-      <h1>Catalogue d'Image</h1>
+      <h1>Catalogue d'Images</h1>
     </div>
   </div>
   
